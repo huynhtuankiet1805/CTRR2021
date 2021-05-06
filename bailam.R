@@ -267,15 +267,15 @@
                 #bieudoGK
                 ggplot(DiemGK1, aes(x=DiemGK)) + 
                 geom_histogram(aes(fill=..x..), col = "white",binwidth = 0.4) +
-                xlab("Di???m")+ ylab("S??? Sinh Viên") +
-                ggtitle("Bi???u d??? ph??? di???m Gi???a k??? c???a Sinh Viên")+
-                scale_fill_gradient("Di???m", low="red", high="green")
+                xlab("Điểm")+ ylab("Số Sinh Viên") +
+                ggtitle("Biểu đồ phổ điểm Giữa kỳ của Sinh Viên")+
+                scale_fill_gradient("Điểm", low="red", high="green")
                 #bieudoCK
                 ggplot(DiemCK1,aes(x=DiemCK))+
                 geom_histogram(aes(fill=..x..),col= "white",binwidth=0.4 )+
-                xlab("Di???m")+ylab("S??? Sinh Viên")+
-                ggtitle("Bi???u d??? ph??? di???m Cu???i k??? c???a Sinh Viên")+
-                scale_fill_gradient("Di???m",low="red",high="green")
+                  xlab("Điểm")+ ylab("Số Sinh Viên") +
+                  ggtitle("Biểu đồ phổ điểm Cuối kỳ của Sinh Viên")+
+                  scale_fill_gradient("Điểm", low="red", high="green")
               #3.7
                 #Nhom cao nhat, thap nhat GK vs CK
                 
@@ -404,15 +404,15 @@
                    #BieudoGK
                   ggplot(phloaiSV2mucGK, aes(x=Diemso)) + 
                   geom_histogram(aes(fill=..x..), col = "white",binwidth = 0.05) +
-                  xlab("Di???m")+ ylab("S??? Sinh Viên") +
-                  ggtitle("Bi???u d??? ph??? di???m c???a các sinh viên có di???m s??? ??? 2 m???c di???m cao nh???t GK")+
-                  scale_fill_gradient("Di???m", low="red", high="green")
+                  xlab("Điểm")+ ylab("Số Sinh Viên") +
+                  ggtitle("Biểu đồ phổ điểm của các sinh viên có điểm số ở 2 mức điểm cao nhất GK")+
+                  scale_fill_gradient("Điểm", low="red", high="green")
                    #BieudoCK
                   ggplot(phloaiSV2mucCK, aes(x=Diemso)) + 
                   geom_histogram(aes(fill=..x..), col = "white",binwidth = 0.05) +
-                  xlab("Di???m")+ ylab("S??? Sinh Viên") +
-                  ggtitle("Bi???u d??? ph??? di???m c???a các sinh viên có di???m s??? ??? 2 m???c di???m cao nh???t CK")+
-                  scale_fill_gradient("Di???m", low="red", high="green")
+                  xlab("Điểm")+ ylab("Số Sinh Viên") +
+                  ggtitle("Biểu đồ phổ điểm của các sinh viên có điểm số ở 2 mức điểm cao nhất CK")+
+                  scale_fill_gradient("Điểm", low="red", high="green")
               #3.16
                   k=scan()
                   diemdau=158-k
@@ -437,15 +437,15 @@
                   #BieudoGK
                     ggplot(phloaiSVkmucGK, aes(x=Diemso)) + 
                     geom_histogram(aes(fill=..x..), col = "white",binwidth = 0.05) +
-                    xlab("Di???m")+ ylab("S??? Sinh Viên") +
-                    ggtitle("Bi???u d??? ph??? di???m c???a các sinh viên có di???m s??? v???i k m???c di???m cao nh???t GK")+
-                    scale_fill_gradient("Di???m", low="red", high="green")
+                    xlab("Điểm")+ ylab("Số Sinh Viên") +
+                    ggtitle("Biểu đồ phổ điểm của các sinh viên có điểm số trong k mức điểm cao nhất GK")+
+                    scale_fill_gradient("Điểm", low="red", high="green")  
                   #BieudoCK
                     ggplot(phloaiSVkmucCK, aes(x=Diemso)) + 
                     geom_histogram(aes(fill=..x..), col = "white",binwidth = 0.05) +
-                    xlab("Di???m")+ ylab("S??? Sinh Viên") +
-                    ggtitle("Bi???u d??? ph??? di???m c???a các sinh viên có di???m s??? v???i k m???c di???m cao nh???t CK")+
-                    scale_fill_gradient("Di???m", low="red", high="green")  
+                    xlab("Điểm")+ ylab("Số Sinh Viên") +
+                    ggtitle("Biểu đồ phổ điểm của các sinh viên có điểm số trong k mức điểm cao nhất CK")+
+                    scale_fill_gradient("Điểm", low="red", high="green")  
 #Bài v
                 chuongGK <- read_xlsx("201_CO1007.xlsx",sheet = "GK_0", range = "C12:AA16")
                 chuongCK <- read_xlsx("201_CO1007.xlsx",sheet = "CK_0", range = "C12:AN16")
